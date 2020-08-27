@@ -1,9 +1,44 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>veterinary-list</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar class="image">
+    <img src="../../assets/img/banner2.jpg" alt="">
+  </ion-toolbar>
+
+  <ion-toolbar class="nav-login ion-text-center">
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="background">
+    <img src="../../assets/img/vector5.jpg" alt="">
+  </div>
+  <ion-card> 
+    <ion-card-content>
 
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/home']">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+          <ion-badge>6</ion-badge>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="veterinary-list">
+          <ion-icon name="document-text"></ion-icon>
+          <ion-label>Receta</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="notifications">
+          <ion-icon name="notifications"></ion-icon>
+          <ion-label>Notificaciones</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

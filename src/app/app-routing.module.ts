@@ -16,9 +16,9 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'veterinary-list',
-    loadChildren: () => import('./veterinary-list/veterinary-list.module').then( m => m.VeterinaryListPageModule)
-  },
+    path: 'notifications',
+    loadChildren: () => import('./notifications/notifications.module').then( m => m.NotificationsPageModule)
+  }
 ];
 
 @NgModule({

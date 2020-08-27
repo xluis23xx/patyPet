@@ -17,7 +17,7 @@
       <ion-grid>
         <ion-row class="row-1">
           <ion-col size="6">
-           <div class="card-box">
+           <div class="card-box" [routerLink]="['/veterinary-list']">
               <h4>Perfil</h4>
            </div>
           </ion-col>
@@ -48,28 +48,22 @@
   <ion-toolbar>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="schedule">
-          <ion-icon name="calendar"></ion-icon>
-          <ion-label>Schedule</ion-label>
+        <ion-tab-button [routerLink]="['/home']">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
           <ion-badge>6</ion-badge>
         </ion-tab-button>
     
-        <ion-tab-button tab="speakers">
-          <ion-icon name="person-circle"></ion-icon>
-          <ion-label>Speakers</ion-label>
+        <ion-tab-button tab="veterinary-list">
+          <ion-icon name="document-text"></ion-icon>
+          <ion-label>Receta</ion-label>
         </ion-tab-button>
     
-        <ion-tab-button tab="map">
-          <ion-icon name="map"></ion-icon>
-          <ion-label>Map</ion-label>
-        </ion-tab-button>
-    
-        <ion-tab-button tab="about">
-          <ion-icon name="information-circle"></ion-icon>
-          <ion-label>About</ion-label>
+        <ion-tab-button tab="notifications">
+          <ion-icon name="notifications"></ion-icon>
+          <ion-label>Notificaciones</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
-    
   </ion-toolbar>
 </ion-footer>

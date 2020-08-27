@@ -1,3 +1,7 @@
+*:focus { 
+  outline: none; //quita los efectos de borde al dar click o hacer focus en un input
+} 
+
 ion-header{
   .image{
       max-height: 150px;
@@ -50,6 +54,7 @@ ion-content{
               padding: 20px;
               height: 160px;
               .card-box{
+                cursor: pointer;
                 height: 100%;
                 background-image: url("../../assets/img/vector6.jpg");
                 background-position: center center;
@@ -59,11 +64,15 @@ ion-content{
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
+                opacity: 80%;
                 h4{
                   font-size: 20px;
                   color: #000;
                 }
-             }
+              }
+             .card-box:hover{
+                opacity: 100%;
+              }
             }
           }
         }
